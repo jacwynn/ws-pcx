@@ -17,7 +17,7 @@ const TopBar = () => {
                     <a href="tel:9045340486" className="text-white font-abzee"><FaPhone className="inline-block mr-[0.625em]" /><span>(904) 534-0486</span></a>
                 </div>
                 <div>
-                    <Button />
+                    <Button isTopBarCTA />
                 </div>
             </container>
         </section>
@@ -25,9 +25,9 @@ const TopBar = () => {
 }
 
 // Move this into its on component folder
-const Button = ({ ctaText="Contact Us" }) => {
+const Button = ({ ctaText="Contact Us", isTopBarCTA }) => {
     return (
-        <button className="font-abzee bg-[#252B70] rounded-[3.125rem] px-12 py-4 text-white uppercase tracking-widest">
+        <button className={`font-abzee bg-[#252B70] rounded-[3.125rem] px-12 py-4 text-white uppercase tracking-widest ${isTopBarCTA ? 'max-[767px]:hidden' : ''}`}>
             <a href="#">{ ctaText }</a>
         </button>
     )
