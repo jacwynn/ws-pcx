@@ -5,6 +5,7 @@ const Header = () => {
   return (
     <header>
         <TopBar />
+        <Navigation />
     </header>
   )
 }
@@ -12,7 +13,7 @@ const Header = () => {
 const TopBar = () => {
     return (
         <section className="bg-[#FCA223]">
-            <container className="flex items-center justify-between max-w-6xl mx-auto p-2.5">
+            <container className="flex justify-between items-center py-2.5 mx-auto max-w-6xl">
                 <div>
                     <a href="tel:9045340486" className="text-white font-abzee"><FaPhone className="inline-block mr-[0.625em]" /><span>(904) 534-0486</span></a>
                 </div>
@@ -30,6 +31,14 @@ const Button = ({ ctaText="Contact Us", isTopBarCTA }) => {
         <button className={`font-abzee bg-[#252B70] rounded-[3.125rem] px-12 py-4 text-white uppercase tracking-widest ${isTopBarCTA ? 'max-[767px]:hidden' : ''}`}>
             <a href="#">{ ctaText }</a>
         </button>
+    )
+}
+
+const Navigation = () => {
+    return (
+        <nav>
+            <h1>Hello world</h1>
+        </nav>
     )
 }
 
