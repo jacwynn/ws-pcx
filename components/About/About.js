@@ -1,12 +1,13 @@
 import Image from 'next/image'
+import bucketImg from '../../public/images/bucket.png'
 
 const About = () => {
     return (
-        <section className='relative'>
+        <section id='about' className='relative'>
             <div className='flex gap-16 items-center py-20 pb-32 mx-auto max-w-6xl max-[767px]:flex-col max-[767px]:px-12'>
                 <div>
                     <Image 
-                        src="/images/bucket.png"
+                        src={bucketImg}
                         alt="Cleaning bucket"
                         width={500}
                         height={500}

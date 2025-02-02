@@ -1,11 +1,13 @@
-import React from 'react'
-import { FaPhone } from 'react-icons/fa';
+import Image from 'next/image';
+import { FaPhone } from 'react-icons/fa'
+
+import logo from '../../public/images/logo.png'
 
 const Header = () => {
   return (
     <header>
         <TopBar />
-        {/* <Navigation /> */}
+        <Navigation />
     </header>
   )
 }
@@ -29,15 +31,38 @@ const TopBar = () => {
 const Button = ({ ctaText="Contact Us", isTopBarCTA }) => {
     return (
         <button className={`font-abzee bg-[#252B70] rounded-[3.125rem] px-12 py-4 text-white uppercase tracking-widest ${isTopBarCTA ? 'max-[767px]:hidden' : ''}`}>
-            <a href="#">{ ctaText }</a>
+            <a href="#contact">{ ctaText }</a>
         </button>
     )
 }
 
 const Navigation = () => {
     return (
-        <nav>
-            <h1>Navigation</h1>
+        <nav className='py-5'>
+            <div className='flex justify-center mb-8 max-[767px]:mb-0'>
+                <Image 
+                    src={logo}
+                    alt="Professional Cleaing Xperts Logo"
+                    width={150}
+                    height={150}
+                />
+            </div>
+            <div className='flex justify-center max-[767px]:hidden'>
+                <ul className='flex space-x-8 font-abzee text-[1.0625rem]'>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#testimonials">Testimonials</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     )
 }

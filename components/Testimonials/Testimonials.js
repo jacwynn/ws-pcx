@@ -4,7 +4,7 @@ import data from './data.json';
 
 const Testimonials = () => {
     return (
-        <section className='relative' style={{ backgroundImage: "url('/images/cleanliness-bg.jpg')", backgroundSize: 'cover' }}>
+        <section id='testimonials' className='relative' style={{ backgroundImage: "url('/images/cleanliness-bg.jpg')", backgroundSize: 'cover' }}>
             <div className='absolute inset-0 bg-[#252B70] opacity-90'></div>
 
             <div className='relative z-10 py-20 text-center text-white'>

@@ -1,7 +1,7 @@
 const Hero = () => {
     return (
         <section className="relative" style={{ backgroundImage: "url('/images/hero.jpg')", backgroundSize: 'cover' }}>
-            <div className="py-36 mx-auto max-w-6xl">
+            <div className="py-36 mx-auto max-w-6xl max-[767px]:px-12">
                 <div className="p-8 space-y-8 max-w-md bg-white max-[767px]:mx-auto">
                     <div className="text-[2.375rem] font-playfair leading-none">
                         <p>Clean Space.</p>
@@ -13,7 +13,7 @@ const Hero = () => {
                     </div>
                     <div>
                         <button className="font-abzee bg-[#252B70] rounded-[3.125rem] px-12 py-4 text-white uppercase tracking-widest">
-                            <a href="#">Contact Us</a>
+                            <a href="#contact">Contact Us</a>
                         </button>
                     </div>
                 </div>

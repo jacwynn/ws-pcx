@@ -1,6 +1,6 @@
 const Contact = () => {
     return (
-        <section>
+        <section id="contact">
             <div className='py-12 text-center max-[767px]:px-12'>
                 <div className='text-[1.875rem] text-[#FCA223] font-playfair'>Contact Us</div>
                 <div className='text-[2.25rem] text-[#252B70] font-playfair'>For all inquries please call:</div>

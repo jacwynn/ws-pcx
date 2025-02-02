@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import data from './data.json'
+import data from './data'
 
 const Services = () => {
     return (
-        <section>
+        <section id='services'>
             <div className="py-20 text-center">
                 <h4 className="text-[1.875rem] text-[#FCA223] font-playfair">Services</h4>
                 <h3 className='text-[2.25rem] text-[#252B70] font-playfair'>A cleaning service you can trust</h3>
