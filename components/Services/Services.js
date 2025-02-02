@@ -28,12 +28,13 @@ const ImageAndText = ({ content, index }) => {
                     <h4 className='text-[1.625rem] font-abzee max-[767px]:text-[1.5rem]'>{content.title}</h4>
                 </div>
                 <div className={`flex-1 ${!isEven ? 'flex justify-end':''}`}>
-                    <Image 
+                    {/* <Image 
                         src={content.image}
                         alt="service-photo"
                         width={400}
                         height={400}
-                    />
+                    /> */}
+                    <img src={content.image.src} className='w-[25rem]' />
                 </div>
             </div>
             {!isLastItem && <hr className='mt-16 max-[767px]:hidden' />}

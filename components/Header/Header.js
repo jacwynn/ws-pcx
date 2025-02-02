@@ -40,12 +40,13 @@ const Navigation = () => {
     return (
         <nav className='py-5'>
             <div className='flex justify-center mb-8 max-[767px]:mb-0'>
-                <Image 
+                {/* <Image 
                     src={logo}
                     alt="Professional Cleaing Xperts Logo"
                     width={150}
                     height={150}
-                />
+                /> */}
+                <img src={logo.src} className='w-[9.375rem]' />
             </div>
             <div className='flex justify-center max-[767px]:hidden'>
                 <ul className='flex space-x-8 font-abzee text-[1.0625rem]'>
