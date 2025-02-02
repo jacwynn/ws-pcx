@@ -6,12 +6,13 @@ const About = () => {
         <section id='about' className='relative'>
             <div className='flex gap-16 items-center py-20 pb-32 mx-auto max-w-6xl max-[767px]:flex-col max-[767px]:px-12'>
                 <div>
-                    <Image 
+                    {/* <Image 
                         src={bucketImg}
                         alt="Cleaning bucket"
                         width={500}
                         height={500}
-                    />
+                    /> */}
+                    <img src={bucketImg.src} className='w-[31.25rem]' />
                 </div>
                 <div>
                     <h4 className='text-[1.875rem] text-[#FCA223] font-playfair'>About Us</h4>
