@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Header from '../components/Header/Header'
-import Footer from '../components/Footer'
-import Contact from '../components/Contact'
+import About from '../components/About'
 import Testimonials from '../components/Testimonials'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"></link>
       </Head>
       <Header />
+      <About />
       <Testimonials />
       <Contact />
       <Footer />
