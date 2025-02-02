@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header>
         <TopBar />
-        <Navigation />
+        {/* <Navigation /> */}
     </header>
   )
 }
@@ -37,7 +37,7 @@ const Button = ({ ctaText="Contact Us", isTopBarCTA }) => {
 const Navigation = () => {
     return (
         <nav>
-            <h1>Hello world</h1>
+            <h1>Navigation</h1>
         </nav>
     )
 }
