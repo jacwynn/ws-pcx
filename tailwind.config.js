@@ -11,5 +11,9 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  variants: {
+    extend: {
+      borderColor: ['hover']
+    }
+  },
 }

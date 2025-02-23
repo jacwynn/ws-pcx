@@ -51,16 +51,16 @@ const Navigation = () => {
             <div className='flex justify-center max-[767px]:hidden'>
                 <ul className='flex space-x-8 font-abzee text-[1.0625rem]'>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="#about" className='py-2 border-t-2 border-b-2 border-white transition-colors duration-700 hover:border-black'>About</a>
                     </li>
                     <li>
-                        <a href="#services">Services</a>
+                        <a href="#services" className='py-2 border-t-2 border-b-2 border-white transition-colors duration-700 hover:border-black'>Services</a>
                     </li>
                     <li>
-                        <a href="#testimonials">Testimonials</a>
+                        <a href="#testimonials" className='py-2 border-t-2 border-b-2 border-white transition-colors duration-700 hover:border-black'>Testimonials</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a href="#contact" className='py-2 border-t-2 border-b-2 border-white transition-colors duration-700 hover:border-black'>Contact</a>
                     </li>
                 </ul>
             </div>
